@@ -10,8 +10,6 @@ df = pd.DataFrame(bars, columns=['time', 'open', 'high', 'low', 'close', 'volume
 
 print(df)
 
-# adx = ta.adx(df['high'], df['low'], df['close'])
-
 adx = df.ta.adx()
 
 print(adx)
